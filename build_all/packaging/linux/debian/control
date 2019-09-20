@@ -1,25 +1,23 @@
-Source: azure-c-shared-util
+Source: azure-c-shared-util-twilio
 Priority: optional
-Maintainer: Azure User <aziotsdklinux@outlook.com>
-Build-Depends: debhelper (>= 9), cmake (>= 2.8), uuid-dev, libssl-dev, libcurl4-openssl-dev, curl
+Maintainer: Anton Gerasimov <agerasimov@twilio.com>
+Build-Depends: debhelper (>= 9), cmake (>= 2.8), libssl-dev, libcurl4-openssl-dev, curl
 Standards-Version: 3.9.6
 Section: libs
-Homepage: https://github.com/Azure/azure-c-shared-utility.git
-#Vcs-Git: git://anonscm.debian.org/collab-maint/azure-c-shared-util.git
-#Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/azure-c-shared-util.git;a=summary
+Homepage: https://github.com/twilio/azure-c-shared-utility.git
 
-Package: azure-c-shared-util-dev
+Package: azure-c-shared-util-twilio-dev
 Section: libdevel
 Architecture: any
-Depends: azure-c-shared-util-lib (= ${binary:Version}), ${misc:Depends}, uuid-dev, libssl-dev, libcurl4-openssl-dev, curl
-Description: AzureIoT Shared Utility Development Library Package
+Depends: azure-c-shared-util-twilio-lib (= ${binary:Version}), ${misc:Depends}, libssl-dev, libcurl4-openssl-dev, curl
+Description: AzureIoT Shared Utility Development Library Package (Twilio edition)
  The Microsoft Azure shared utility development library used to develop applications
  for developers and IT Staff
 
-Package: azure-c-shared-util-lib
+Package: azure-c-shared-util-twilio-lib
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, uuid-dev, libssl-dev, libcurl4-openssl-dev, curl
-Description: AzureIoT Shared Utility Library Package
+Depends: ${shlibs:Depends}, ${misc:Depends}, libssl-dev, libcurl4-openssl-dev, curl
+Description: AzureIoT Shared Utility Library Package (Twilio edition)
  The Microsoft Azure shared utility library used to develop applications
  for developers and IT Staff
 
